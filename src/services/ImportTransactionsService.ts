@@ -17,18 +17,21 @@ class ImportTransactionsService {
     const contactsReadStream = fs.createReadStream(filePath);
     const transactionRepository = getCustomRepository(TransactionRepository);
     const categoriesRepository = getRepository(Category);
+
     const parses = csvParse({
       from_line: 2,
     });
+
     const transactions: CSVTransaction[] = [];
 
     const categories: string[] = [];
 
     const parseCSV = contactsReadStream.pipe(parses);
     parseCSV.on('data', async line => {
-      const { title, type, value, category } = line.map((cell: string) =>
+      const [title, type, value, category] = line.map((cell: string) =>
         cell.trim(),
       );
+
       if (!title || !type || !value) return;
 
       categories.push(category);
