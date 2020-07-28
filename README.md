@@ -25,7 +25,8 @@ Run the following script in order to execute the application in development mode
 
 ```yarn install  ```  
 
-Initialize your database(POSTGRES)</br>
+Initialize your database
+```( POSTGRESQL )```
 
 Run the transactions in order to configure the database:
 
