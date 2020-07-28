@@ -10,20 +10,28 @@
 </p>
 
 
-<h2>Features</h2>
+# :rocket: Features
 - Create and Delete transactions </br>
 - Import transactions from CSV file</br>
 
 
-<h2>Installation</h2>
-- Clone this repo</br></br>
-- Run the following script in order to execute the application in development mode:
-<strong>  yarn</strong> </br> </br>
+# :construction_worker: Installation
+Clone this repo
 
--Initialize your database(POSTGRES)</br>
+```git clone https://github.com/Alissonjra/gofinances-api```
 
--Run the transactions in order to configure the database.
-- yarn typeorm migration:run </br>
 
--Start the application
-- yarn dev:server
+Run the following script in order to execute the application in development mode:
+
+```yarn install  ```  
+
+Initialize your database(POSTGRES)</br>
+
+Run the transactions in order to configure the database:
+
+```yarn typeorm migration:run```
+
+
+Start the application:
+
+```yarn dev:server```
