@@ -36,3 +36,11 @@ Run the transactions in order to configure the database:
 Start the application:
 
 ```yarn dev:server```
+
+# :hammer: Technologies
+
+In this project i used this technologies:
+
+- [Express](https://expressjs.com/pt-br/)
+- [Multer](https://www.npmjs.com/package/multer)
+- [TypeORM](https://typeorm.io/#/)
